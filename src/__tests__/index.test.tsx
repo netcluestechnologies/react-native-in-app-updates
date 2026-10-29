@@ -1,3 +1,8 @@
-import { it } from '@jest/globals';
+import { describe, it, expect } from '@jest/globals';
+import { checkVersion } from '../index';
 
-it.todo('write a test');
+describe('checkVersion', () => {
+  it('is exported as a function', () => {
+    expect(typeof checkVersion).toBe('function');
+  });
+});

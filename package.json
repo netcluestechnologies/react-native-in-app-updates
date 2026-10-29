@@ -17,11 +17,11 @@
     "lib",
     "android",
     "ios",
-    "cpp",
     "*.podspec",
     "react-native.config.js",
     "!ios/build",
     "!android/build",
+    "!android/.gradle",
     "!android/gradle",
     "!android/gradlew",
     "!android/gradlew.bat",
@@ -47,14 +47,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/netcluestechnologies/react-native-in-app-updates.git.git"
+    "url": "git+https://github.com/netcluestechnologies/react-native-in-app-updates.git"
   },
   "author": "Netclues Technologies <mobile@netclues.com> (https://github.com/netcluestechnologies)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/netcluestechnologies/react-native-in-app-updates.git/issues"
+    "url": "https://github.com/netcluestechnologies/react-native-in-app-updates/issues"
   },
-  "homepage": "https://github.com/netcluestechnologies/react-native-in-app-updates.git#readme",
+  "homepage": "https://github.com/netcluestechnologies/react-native-in-app-updates#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -111,14 +111,7 @@
       ]
     ]
   },
-  "codegenConfig": {
-    "name": "InAppUpdateSpec",
-    "type": "modules",
-    "jsSrcsDir": "src",
-    "android": {
-      "javaPackageName": "com.inappupdate"
-    }
-  },
+
   "prettier": {
     "quoteProps": "consistent",
     "singleQuote": true,
@@ -170,7 +163,7 @@
     }
   },
   "create-react-native-library": {
-    "type": "turbo-module",
+    "type": "library",
     "languages": "kotlin-objc",
     "tools": [
       "eslint",

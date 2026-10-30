@@ -1,5 +1,5 @@
 {
-  "name": "@netclues/react-native-in-app-update",
+  "name": "@netcluestechnologies/react-native-in-app-update",
   "version": "0.1.0",
   "description": "Seamless in-app update flow for React Native: Google Play In-App Updates on Android and App Store version checking on iOS",
   "main": "./lib/module/index.js",

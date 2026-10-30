@@ -2,6 +2,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
+      "@netclues/react-native-in-app-update": ["./src/index"],
       "react-native-in-app-update": ["./src/index"]
     },
     "allowUnreachableCode": false,

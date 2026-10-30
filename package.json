@@ -1,5 +1,5 @@
 {
-  "name": "react-native-in-app-update",
+  "name": "@netclues/react-native-in-app-update",
   "version": "0.1.0",
   "description": "Seamless in-app update flow for React Native: Google Play In-App Updates on Android and App Store version checking on iOS",
   "main": "./lib/module/index.js",
@@ -56,6 +56,7 @@
   },
   "homepage": "https://github.com/netcluestechnologies/react-native-in-app-updates#readme",
   "publishConfig": {
+    "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
@@ -111,7 +112,6 @@
       ]
     ]
   },
-
   "prettier": {
     "quoteProps": "consistent",
     "singleQuote": true,

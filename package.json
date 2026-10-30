@@ -1,5 +1,5 @@
 {
-  "name": "@netcluestechnologies/react-native-in-app-update",
+  "name": "@netclues/react-native-in-app-updates",
   "version": "0.1.0",
   "description": "Seamless in-app update flow for React Native: Google Play In-App Updates on Android and App Store version checking on iOS",
   "main": "./lib/module/index.js",
@@ -7,6 +7,7 @@
   "exports": {
     ".": {
       "react-native-in-app-update-source": "./src/index.tsx",
+      "react-native-in-app-updates-source": "./src/index.tsx",
       "types": "./lib/typescript/src/index.d.ts",
       "default": "./lib/module/index.js"
     },

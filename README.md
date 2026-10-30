@@ -1,4 +1,4 @@
-# react-native-in-app-update
+# @netclues/react-native-in-app-updates
 
 Seamless in-app update flow for React Native: Google Play In-App Updates (Immediate and Flexible) on Android and iTunes App Store version checking with customizable update prompts on iOS.
 
@@ -23,7 +23,7 @@ Seamless in-app update flow for React Native: Google Play In-App Updates (Immedi
 ## Installation
 
 ```sh
-npm install react-native-in-app-update
+npm install @netclues/react-native-in-app-updates
 ```
 
 ### iOS

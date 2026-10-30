@@ -24,8 +24,6 @@ Seamless in-app update flow for React Native: Google Play In-App Updates (Immedi
 
 ```sh
 npm install react-native-in-app-update
-# or
-yarn add react-native-in-app-update
 ```
 
 ### iOS

@@ -17,6 +17,7 @@ import {
 export default function App() {
   const [downloadProgress, setDownloadProgress] = useState<number | null>(null);
   const [isUpdateReady, setIsUpdateReady] = useState(false);
+  const [lastResult, setLastResult] = useState<string | null>(null);
 
   useEffect(() => {
     const subscription = addUpdateListener((event: InstallStateEvent) => {
@@ -41,6 +42,11 @@ export default function App() {
         appName: 'My App',
       });
       console.log('Check version result:', result);
+      setLastResult(JSON.stringify(result));
+      Alert.alert(
+        'Update Check Result',
+        `Status: ${result?.status || 'Unknown'}\n\nNote: Google Play in-app updates only show dialogs when the app is installed from Google Play and an update is published in the Play Console.`
+      );
     } catch (error: any) {
       Alert.alert(
         'Update Error',
@@ -64,6 +70,10 @@ export default function App() {
     <View style={styles.container}>
       <Text style={styles.title}>In-App Update Demo</Text>
       <Text style={styles.subtitle}>Platform: {Platform.OS}</Text>
+
+      {lastResult && (
+        <Text style={styles.resultText}>Last Result: {lastResult}</Text>
+      )}
 
       {downloadProgress !== null && (
         <Text style={styles.progressText}>
@@ -119,6 +129,15 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: '#007AFF',
     marginBottom: 16,
+  },
+  resultText: {
+    fontSize: 14,
+    color: '#333',
+    marginBottom: 16,
+    backgroundColor: '#EAEAEA',
+    padding: 8,
+    borderRadius: 6,
+    textAlign: 'center',
   },
   button: {
     backgroundColor: '#007AFF',

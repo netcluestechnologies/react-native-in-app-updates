@@ -47,7 +47,7 @@ import {
   checkVersion,
   completeFlexibleUpdate,
   addUpdateListener,
-} from 'react-native-in-app-update';
+} from '@netclues/react-native-in-app-updates';
 
 // 1. Check for an update
 const checkAppUpdate = async () => {
